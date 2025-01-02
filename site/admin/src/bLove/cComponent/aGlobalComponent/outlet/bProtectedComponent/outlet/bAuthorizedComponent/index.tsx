@@ -5,6 +5,7 @@ import { AppSidebar } from "./component/app-sidebar";
 import { Separator } from "@/aConnection/bShadcnConnection/components/ui/separator";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/aConnection/bShadcnConnection/components/ui/breadcrumb";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/aConnection/bShadcnConnection/components/ui/sidebar";
+import { ModeToggle } from "@/aConnection/bShadcnConnection/components/mode-toggle";
 
 
 const AuthorizedComponent = ({ children }: { children: React.ReactNode }) => {
@@ -33,6 +34,9 @@ const AuthorizedComponent = ({ children }: { children: React.ReactNode }) => {
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
+            </div>
+            <div className="ml-auto px-3 flex gap-2">
+              <ModeToggle />
             </div>
           </header>
           {/* <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
